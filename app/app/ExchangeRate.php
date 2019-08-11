@@ -35,6 +35,7 @@ class ExchangeRate
         if ($fromCurrencyCode === $toCurrencyCode) {
             return 1;
         }
+        return 1.123456; // exchangeratesapi.io is not working
 
         $url = "https://api.exchangeratesapi.io/latest?base={$fromCurrencyCode}&symbols=$toCurrencyCode";
         $response = $this->client->request('GET', $url);
