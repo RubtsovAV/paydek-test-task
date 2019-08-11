@@ -12,8 +12,8 @@ if [ "$APP_MODE" == "development" ]; then
 fi
 
 chmod +x /app/vendor/phpunit/phpunit/phpunit
-chmod +x /app/vendor/squizlabs/php_codesniffer/scripts/phpcs
-chmod +x /app/vendor/squizlabs/php_codesniffer/scripts/phpcbf
+chmod +x /app/vendor/bin/phpcs
+chmod +x /app/vendor/bin/phpcbf
 
 cp -R /root/cron.d/* /etc/cron.d/
 chown -R root:root /etc/cron.d/

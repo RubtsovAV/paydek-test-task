@@ -2,4 +2,7 @@
 
 namespace App\Exceptions;
 
-class UndefinedRateException extends \Exception {}
+class UndefinedRateException extends \Exception
+{
+
+}
