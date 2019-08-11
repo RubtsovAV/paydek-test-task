@@ -18,7 +18,7 @@ Instructions need to be clear enough that anyone can check out the code and get 
 
 ## Solution
 
-###Install docker-compose
+### Install docker-compose
 
 For linux
 ```
@@ -29,7 +29,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 For others - https://docs.docker.com/compose/install/#install-compose
 
 
-###Launch 
+### Launch 
 ```
 ./docker-compose up -d
 ./docker-compose exec backend php artisan db:seed
