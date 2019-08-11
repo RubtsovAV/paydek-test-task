@@ -1,7 +1,7 @@
 # Paydek Test Task
 
 ## Task 
-
+```
 Implement a system where you have many users
 Each user has multiple accounts
 Each account can be either sending or receiving and is associated with the currency
@@ -15,7 +15,7 @@ Free to use whatever PHP based toolset, MySQL for the database
 Can be done as an API/ Command LIne Tool/ Web App
 
 Instructions need to be clear enough that anyone can check out the code and get the app up and running and able to test 
-
+```
 ## Solution
 
 ### Install docker-compose
