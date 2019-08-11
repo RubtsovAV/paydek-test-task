@@ -1,0 +1,12 @@
+/app/storage/logs/*.log {
+	daily
+	rotate 10
+	size 2M
+	missingok
+	notifempty
+	compress
+	sharedscripts
+	copytruncate
+	dateext
+	dateformat .%Y-%m-%d
+}

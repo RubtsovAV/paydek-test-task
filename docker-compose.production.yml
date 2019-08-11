@@ -1,0 +1,17 @@
+version: '2'
+services:
+    backend:
+        restart: always
+        environment:
+            - APP_MODE=production
+            - DB_HOST=db.api
+            - DB_PORT=3306
+            - DB_DATABASE=paydek
+            - DB_USERNAME=paydek
+            - DB_PASSWORD=password
+
+        volumes:
+            - ./app:/app
+
+    db:
+        restart: always

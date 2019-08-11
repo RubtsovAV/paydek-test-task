@@ -1,0 +1,7 @@
+# m h dom mon dow user command
+#
+#* * * * * root echo "test" >> /app/storage/logs/cron.log
+0 0 * * * root /usr/sbin/logrotate /etc/logrotate.conf >> /app/storage/logs/logrotate.log 2>&1 #ротация логов каждый день в 00.00 (UTC)
+################################################################
+* * * * * root /usr/local/bin/php /app/artisan schedule:run >> /dev/null 2>&1
+##############################################################

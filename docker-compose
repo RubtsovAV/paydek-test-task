@@ -1,0 +1,5 @@
+#!/bin/bash
+
+APP_MODE=${APP_MODE:-development}
+
+docker-compose -p paydek_test_task -f docker-compose.common.yml -f docker-compose.$APP_MODE.yml $@

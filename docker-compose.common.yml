@@ -1,0 +1,7 @@
+version: '2'
+services:
+    backend:
+        ports:
+          - "80:80"
+        mem_limit: 1000m
+        build: ./
